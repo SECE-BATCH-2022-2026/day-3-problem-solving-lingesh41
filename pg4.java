@@ -10,7 +10,7 @@ public class pg4{
 
 class UserMainCode {
 	public static boolean validateCode(String s) {
-        	String pattern = "^CPT-\\d{6}$";
+        	String pattern = "^[CPT]{3}-\\d{6}$";
         	return s.matches(pattern);
     	}
 }
